@@ -1,7 +1,7 @@
 /*********************************************************************************************
-* File£º	lcdapp.c
+* Fileï¼š	lcdapp.c
 * Author:	Embest	
-* Desc£º	LCD_Test
+* Descï¼š	LCD_Test
 * History:	
 *********************************************************************************************/
 
@@ -475,7 +475,7 @@ void color_lcd_test(void)
 
 	lcd_init_app();
 #ifndef BOARDTEST	
-//	Lcd_DspHz24(50,10,BLUE,"Ó¢İíÌØÈıĞÇÊµÑéÆ½Ì¨");
+//	Lcd_DspHz24(50,10,BLUE,"è‹±è““ç‰¹ä¸‰æ˜Ÿå®éªŒå¹³å°");
 #endif	
     
     BitmapViewTft16Bit_800480((UINT8T *)(g_ucBitmap));
@@ -513,11 +513,11 @@ void color_lcd_test(void)
 	Glib_Rectangle(619,219,671,271,BLACK);
 //	Glib_Rectangle(420,90,690,280,BLACK);
 
-	Lcd_DspHz24(65,90,BLACK,"ÇëÊäÈëµ¥´Ê");
-	Lcd_DspHz24(65,180,BLACK,"¸Ãµ¥´ÊµÄÒâË¼Îª");
-	Lcd_DspHz24(400,300,BLACK,"¶¡ÅôØ­²ÌîÚ·«Ø­ÕÅ¼Î·æØ­ÕÔÓĞÖÒ");
-	Lcd_DspHz24(262,122,BLACK,"ËÑË÷");
-	Lcd_DspAscII8x16(450,350,BLUE,"20111904 20111941 20111918 20111930");
+	Lcd_DspHz24(65,90,BLACK,"è¯·è¾“å…¥å•è¯");
+	Lcd_DspHz24(65,180,BLACK,"è¯¥å•è¯çš„æ„æ€ä¸º");
+	Lcd_DspHz24(400,300,BLACK,"ä½œè€…ï¼šDP");
+	Lcd_DspHz24(262,122,BLACK,"æœç´¢");
+	Lcd_DspAscII8x16(450,350,BLUE,"ä½œè€…githubï¼šmayqewasd");
 
 	Lcd_DspAscII8x16(505,105,BLACK,"*");
 		Lcd_DspAscII8x16(445,105,BLACK,"-");
@@ -535,13 +535,13 @@ void color_lcd_test(void)
 
 
 #ifdef Hzk16
-	Lcd_DspHz16(65,90,BLACK,"Ó¢İíÌØĞÅÏ¢¼¼ÊõÓĞÏŞ¹«Ë¾");
-	Lcd_DspHz16(65,180,BLACK,"Ê®ÁùµãÕóºº×Ö");
+	Lcd_DspHz16(65,90,BLACK,"è‹±è““ç‰¹ä¿¡æ¯æŠ€æœ¯æœ‰é™å…¬å¸");
+	Lcd_DspHz16(65,180,BLACK,"åå…­ç‚¹é˜µæ±‰å­—");
 #endif
 
 #ifdef Hzk12
-	Lcd_DspHz12(180,i+=20,BLACK,"Ó¢İíÌØĞÅÏ¢¼¼ÊõÓĞÏŞ¹«Ë¾");
-	Lcd_DspHz12(180,i+=20,BLACK,"Ê®¶şµãÕóºº×Ö");
+	Lcd_DspHz12(180,i+=20,BLACK,"è‹±è““ç‰¹ä¿¡æ¯æŠ€æœ¯æœ‰é™å…¬å¸");
+	Lcd_DspHz12(180,i+=20,BLACK,"åäºŒç‚¹é˜µæ±‰å­—");
 #endif
 
 #ifdef Ascii8x16
@@ -573,7 +573,7 @@ for(i=0;i<13;i++)
 	      
               Glib_FilledRectangle(pos[i].x1,pos[i].y1,pos[i].x2,pos[i].y2, BLUE);	
               Glib_FilledRectangle(pos[i].x1,pos[i].y1,pos[i].x2,pos[i].y2, WHITE); 
-			  Lcd_DspHz24(262,122,BLACK,"ËÑË÷");
+			  Lcd_DspHz24(262,122,BLACK,"æœç´¢");
 			  Lcd_DspAscII8x16(505,105,BLACK,"*");
 		Lcd_DspAscII8x16(445,105,BLACK,"-");
 			Lcd_DspAscII8x16(445,165,BLACK,"+");
@@ -647,7 +647,7 @@ if (add==1)
   if (f==1)
 {
 lcd_clr_rect(102,211,319,349,WHITE);
-Lcd_DspHz24(102,222,BLACK,"²éÎŞ´Ë´Ê");
+Lcd_DspHz24(102,222,BLACK,"æŸ¥æ— æ­¤è¯");
 add=1; 
 }
   if(f==0)
@@ -705,7 +705,7 @@ Lcd_DspHz24(142,222,BLACK,(C[g]+q+1));
 		 C[z][v]=B[v];
 		 C[z][n]=';';
 		 lcd_clr_rect(102,211,319,349,WHITE);
-		 Lcd_DspHz24(102,222,BLACK,"ÇëÔÚ´Ë´¦Ìí¼Ó´ÊÒâ");
+		 Lcd_DspHz24(102,222,BLACK,"è¯·åœ¨æ­¤å¤„æ·»åŠ è¯æ„");
 		 }
 		 else
 		 {
@@ -713,7 +713,7 @@ Lcd_DspHz24(142,222,BLACK,(C[g]+q+1));
 		 {keychar='2'; 
 		 C[z][n+1]=',';
 		 lcd_clr_rect(102,211,319,349,WHITE);
-		 Lcd_DspHz24(102,222,BLACK,"µ¥´ÊÌí¼ÓÍê³É");
+		 Lcd_DspHz24(102,222,BLACK,"å•è¯æ·»åŠ å®Œæˆ");
 		 z+=1;
 		 add=0;
 		 mark=0;
